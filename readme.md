@@ -1,6 +1,6 @@
 # Primeiro projeto MCP
 
-Olá 👋 Obrigado por entrar no repositório, a ideia desse projeto é aprender sobre mcp e gostaria de receber ideias sobre o tema.
+Olá 👋 Obrigado por entrar no repositório, a ideia desse projeto é aprender sobre mcp e receber ideias sobre o tema.
 
 MCP de clima atual
 
