@@ -17,7 +17,8 @@
     "build": "tsc",
     "test": "tsc && node --test build --watch ./tests/index.test.js",
     "watch": "tsc --watch",
-    "inspector": "npx @modelcontextprotocol/inspector node build/src/index.js"
+    "inspector": "npx @modelcontextprotocol/inspector node build/src/index.js",
+    "start":"node build/src/index.js"
   },
   "type": "module",
   "keywords": [],
