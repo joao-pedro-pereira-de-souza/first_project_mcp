@@ -17,13 +17,12 @@ const tools: RegisterToolDto[] = [
       }),
     },
     handler: async (args, extra) => {
-
       const { location } = args as { location: string };
       const weatherServer = new WeatherServer();
       const weatherData = await weatherServer.getCurrentWeather(location);
 
       if (!weatherData || !(weatherData as any).location) {
-        const {error, message} = weatherData as any;
+        const { error, message } = weatherData as any;
         return {
           content: [
             {
@@ -44,7 +43,7 @@ const tools: RegisterToolDto[] = [
         content: [
           {
             type: "text",
-            text: `Current weather for Brazil: Sunny, ${Math.trunc(Number(currentWeather))}°C: dados do sistema ${JSON.stringify(args)}: ${JSON.stringify(extra)}`,
+            text: `Current weather for Brazil: Sunny, ${Math.trunc(Number(currentWeather))}°C: data: ${JSON.stringify(weatherData)}`,
           },
         ],
       };

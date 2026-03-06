@@ -24,7 +24,7 @@ export class WeatherRepository {
 
   async getCurrentWeather(location: string) {
     try {
-      const envMock = ["development", "test"];
+      const envMock = ["development", "test", ""];
       if (envMock.includes(process.env.NODE_ENV || "")) {
         return currentResponseJSON;
       }
